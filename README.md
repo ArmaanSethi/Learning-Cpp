@@ -1,6 +1,6 @@
 # Learning-Cpp
 Me learning c++ in 2012/2013 (My first year of programming)
-Long before I knew what git was. 
+long before I knew what git was. 
 
 
 All .cpp files are seperate projects
