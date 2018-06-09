@@ -1,30 +1,22 @@
 #include<iostream>
-#include<fstream>
-#include <iomanip>
-#include <cstdlib>
-#include <ctime>
-#include <H:\My Documents\ComputerScience\Headers\MyClass.h>
 
 using namespace std;
 
-const int N = 100;
+const int N = 20;
+static int count = 0;
 
-/*void swap(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}*/
-
-/*void Qsort(int pivot, int end, int array[]) {
-    int start = pivot + 1;
-    int l = start;
-    int r = end;
+void Qsort(int pivot, int end, int array[]) {
+    count++;
     if(end != pivot) {
+        int start = pivot + 1;
         if((end - start) == 0) {
             if(array[pivot] > array[start]) {
                 swap(array[pivot], array[start]);
             }
-        } else {
+        }
+         else {
+            int l = start;
+            int r = end;
             while(l < r) {
                 l = start;
                 r = end;
@@ -45,18 +37,14 @@ const int N = 100;
             }
         }
     }
-}*/
+}
 
 int main() {
-    int pivot = 0, end = N - 1, array[N];
-    srand(time(0));
+    int pivot = 0, end = N - 1, arraynum[N] = {12,9,2,2,5,15,20,3,1,9,8,17,4,11,7,2,0,16,10,6};
+    Qsort(pivot, end, arraynum);
     for(int i = 0; i < N; i++) {
-        array[i] = rand() % 1001 + 0;
-        cout << array[i] << endl;
+        cout << arraynum[i] << endl;
     }
-    cout << endl << "SORT TIME!!!" << endl << endl;
-    Qsort(pivot, end, array);
-    for(int i = 0; i < N; i++) {
-        cout << array[i] << endl;
-    }
+    cout << "My Count : " << count;
+    return 0;
 }

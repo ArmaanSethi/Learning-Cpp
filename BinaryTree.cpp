@@ -41,7 +41,7 @@ void Tree::insert(char &n)
     int a = 0;
     if(root == NULL)
     {
-        root = new Node(n,NULL, NULL, -2);
+        root = new Node(n,NULL, NULL, 0);
     }else
     {
         Node *current = root;
