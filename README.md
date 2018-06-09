@@ -17,5 +17,5 @@ Templating - BubbleTemplate
 OOP/Pointers - Everything else.  
 
 
+Cool Stuff - TicTacToe, QuoteComp, ExpressionTree, Gut(?), TriPt(?), BinaryTree(?)  
 "Cool" is in relation to it being my first year  
-Cool Stuff - TicTacToe, QuoteComp, ExpressionTree, Gut(?), TriPt(?), BinaryTree(?)
